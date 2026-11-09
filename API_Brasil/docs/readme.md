@@ -1,53 +1,15 @@
-# API de Capitais Brasileiras
+API de Capitais dos Estados Brasileiros
 
-## Descrição
+Descrição: API desenvolvida com Node.js, TypeScript e Express, que permite pesquisar as capitais dos 26 estados brasileiros e do Distrito Federal utilizando a sigla de cada estado.
 
-API desenvolvida utilizando Node.js, TypeScript e Express.
-Permite consultar as capitais dos 26 estados brasileiros
-e do Distrito Federal por meio da sigla da unidade federativa.
+Tecnologias utilizadas: Node.js, TypeScript e Express.
 
-## Tecnologias utilizadas
+Instalação: Para instalar as dependências do projeto, execute o comando npm install.
 
-- Node.js
-- TypeScript
-- Express
+Execução: Para iniciar o servidor em modo de desenvolvimento, utilize npm run dev. Após a inicialização, a aplicação estará disponível em http://localhost:3000.
 
-## Instalação
+Endpoint: A consulta das capitais é feita através do método GET /estados/:sigla, informando a sigla do estado desejado.
 
-Instale as dependências:
+Exemplos de consulta: Para consultar São Paulo, utilize /estados/SP. Para o Rio de Janeiro, /estados/RJ. Para Minas Gerais, /estados/MG.
 
-npm install
-
-## Execução
-
-Execute o servidor em modo de desenvolvimento:
-
-npm run dev
-
-O servidor estará disponível em:
-
-http://localhost:3000
-
-## Endpoint
-
-GET /estados/:sigla
-
-## Exemplos
-
-Consultar São Paulo:
-
-http://localhost:3000/estados/SP
-
-Consultar Rio de Janeiro:
-
-http://localhost:3000/estados/RJ
-
-Consultar Minas Gerais:
-
-http://localhost:3000/estados/MG
-
-## Respostas
-
-HTTP 200: Estado encontrado.
-
-HTTP 404: Estado não encontrado.
+Respostas: O código HTTP 200 indica que o estado foi encontrado com sucesso. Já o código HTTP 404 informa que a sigla fornecida não corresponde a nenhum estado cadastrado na API.
